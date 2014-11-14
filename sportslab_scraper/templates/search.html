@@ -1,0 +1,16 @@
+{% load staticfiles %}
+<html>
+    <title>SportsLab Scraper</title>
+    <script src="{% static 'js/jquery-1.11.1.min.js' %}"></script>
+</html>
+<body>
+    <h1>SportsLab Scraper</h1>
+    <p>Insert Link here</p>
+    <form id="submit_form">
+{#        {% csrf_token %}#}
+        <input type="text" id="link">
+        <input type="submit" id="submit_link" value="frog">
+    </form>
+    <script src="{% static 'js/stuff.js' %}"></script>
+
+</body>

@@ -1,0 +1,12 @@
+setup.py
+project.egg-info/PKG-INFO
+project.egg-info/SOURCES.txt
+project.egg-info/dependency_links.txt
+project.egg-info/entry_points.txt
+project.egg-info/top_level.txt
+sportslab_scrape/__init__.py
+sportslab_scrape/items.py
+sportslab_scrape/pipelines.py
+sportslab_scrape/settings.py
+sportslab_scrape/spiders/__init__.py
+sportslab_scrape/spiders/max_spider.py
