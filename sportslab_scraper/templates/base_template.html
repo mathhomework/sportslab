@@ -1,0 +1,13 @@
+{% load staticfiles %}
+<html>
+<head>
+    <link href="{% static 'css/myStyle.css' %}">
+    {% block header %}
+    {% endblock %}
+
+</head>
+<body>
+    {% block content %}
+    {% endblock %}
+</body>
+</html>

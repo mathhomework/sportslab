@@ -11,4 +11,5 @@ urlpatterns = patterns('',
     url(r'^admin/', include(admin.site.urls)),
     url(r'^$', 'sportslab_scraper.views.search', name = 'home'),
     url(r'^do_scrape/$', 'sportslab_scraper.views.do_scrape', name = 'do_scrape'),
+    url(r'^data/$', 'sportslab_scraper.views.data', name='data'),
 )

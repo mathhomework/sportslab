@@ -25,7 +25,7 @@ ITEM_PIPELINES = {'sportslab_scrape.pipelines.MongoDBPipeline':300}
 # MONGODB_PASSWORD = "" # Change in prod
 
 
-#mongo labs!!
+#mongolab!!
 MONGODB_HOST = 'mongodb://andrew:hotdog@ds053190.mongolab.com:53190/sportslab_mongodb' # Change in prod
 MONGODB_PORT = 53190 # Change in prod
 MONGODB_DATABASE = "sportslab_mongodb" # Change in prod

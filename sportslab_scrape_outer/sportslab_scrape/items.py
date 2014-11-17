@@ -23,7 +23,7 @@ class PassingItem(Item):
     games_played = Field()
     passing_comp = Field()
     passing_att = Field()
-    passing_yard = Field()
+    passing_yards = Field()
     completion_percentage = Field()
     yds_per_completion = Field()
     passing_yards_per_game = Field()
@@ -46,7 +46,7 @@ class RushingItem(Item):
     yards_per_carry = Field()
     rushing_yards_per_game = Field()
     rushing_long = Field()
-    rushing_100plus = Field()
+    rushing_onehundredplus = Field()
     rushing_tdnum = Field()
 
 

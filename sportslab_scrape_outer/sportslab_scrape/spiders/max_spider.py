@@ -70,7 +70,7 @@ class MaxSpider(Spider):
             p["games_played"] = passing_dict[name]["GP"]
             p["passing_comp"] = passing_dict[name]["C"]
             p["passing_att"] = passing_dict[name]["Att"]
-            p["passing_yard"] = passing_dict[name]["Yds"]
+            p["passing_yards"] = passing_dict[name]["Yds"]
             p["completion_percentage"] = passing_dict[name]["C%"]
             p["yds_per_completion"] = passing_dict[name]["Avg"]
             p["passing_yards_per_game"] = passing_dict[name]["Y/G"]
@@ -100,7 +100,7 @@ class MaxSpider(Spider):
             r["yards_per_carry"] = rushing_dict[name]["Avg"]
             r["rushing_yards_per_game"] = rushing_dict[name]["Y/G"]
             r["rushing_long"] = rushing_dict[name]["Lng"]
-            r["rushing_100plus"] = rushing_dict[name]["100+"]
+            r["rushing_onehundredplus"] = rushing_dict[name]["100+"]
             r["rushing_tdnum"] = rushing_dict[name]["TD"]
             yield r
             del rushing_players_stats[0:rushing_end_num]

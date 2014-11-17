@@ -1,0 +1,132 @@
+{% load staticfiles %}
+<html>
+<title>Max Preps Data</title>
+
+<body>
+    {% for key, values in data.items %}
+{#        School Name#}
+        <h3>{{ key }}</h3>
+
+        {% for k, players in values.items %}
+
+                {% if k == "Passing" %}
+                    <h4>Passing</h4>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th title="Jersey Number">#</th>
+                                <th title="Athlete Name">Athlete Name</th>
+                                <th title="Games Played">GP</th>
+                                <th title="Passing Comp">C</th>
+                                <th title="Passing Att">Att</th>
+                                <th title="Passing Yards">Yds</th>
+                                <th title="Completion %">C%</th>
+                                <th title="Yards Per Completion">Avg</th>
+                                <th title="Passing Yards Per Game">Y/G</th>
+                                <th title="Completions Per Game">C/G</th>
+                                <th title="Passing TD">TD</th>
+                                <th title="Passing TDs Per Game">TD/G</th>
+                                <th title="Passing Int">Int</th>
+                                <th title="Passing Long">Lng</th>
+                                <th title="QB Rating">QB Rate</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for player in players %}
+                            <tr>
+                                <td>{{ player.jersey_number }}</td>
+                                <td>{{ player.athlete_name }}</td>
+                                <td>{{ player.games_played }}</td>
+                                <td>{{ player.passing_comp }}</td>
+                                <td>{{ player.passing_att }}</td>
+                                <td>{{ player.passing_yards }}</td>
+                                <td>{{ player.completion_percentage }}</td>
+                                <td>{{ player.yds_per_completion }}</td>
+                                <td>{{ player.passing_yards_per_game}}</td>
+                                <td>{{ player.completions_per_game }}</td>
+                                <td>{{ player.passing_td }}</td>
+                                <td>{{ player.passing_tds_per_game }}</td>
+                                <td>{{ player.passing_int }}</td>
+                                <td>{{ player.passing_long }}</td>
+                                <td>{{ player.qb_rating }}</td>
+
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                {% elif k == "Rushing"%}
+                    <h4>Rushing</h4>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th title="Jersey Number">#</th>
+                                <th title="Athlete Name">Athlete Name</th>
+                                <th title="Games Played">GP</th>
+                                <th title="Rushing Num">Car</th>
+                                <th title="Passing Yards">Yds</th>
+                                <th title="Yards Per Carry">Avg</th>
+                                <th title="Rushing Yards Per Game">Y/G</th>
+                                <th title="Rushing Long">Lng</th>
+                                <th title="Rushing 100Plus">100+</th>
+                                <th title="Rushing TDNum">TD</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for player in players %}
+                            <tr>
+                                <td>{{ player.jersey_number }}</td>
+                                <td>{{ player.athlete_name }}</td>
+                                <td>{{ player.games_played }}</td>
+                                <td>{{ player.rushing_num }}</td>
+                                <td>{{ player.rushing_yards }}</td>
+                                <td>{{ player.yards_per_carry }}</td>
+                                <td>{{ player.rushing_yards_per_game }}</td>
+                                <td>{{ player.rushing_long }}</td>
+                                <td>{{ player.rushing_onehundredplus }}</td>
+                                <td>{{ player.rushing_tdnum }}</td>
+
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                {% elif k == "Receiving" %}
+                    <h4>Receiving</h4>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th title="Jersey Number">#</th>
+                                <th title="Athlete Name">Athlete Name</th>
+                                <th title="Games Played">GP</th>
+                                <th title="Receiving Num">Rec</th>
+                                <th title="Receiving Yards">Yds</th>
+                                <th title="Yards Per Catch">Avg</th>
+                                <th title="Receiving Yards Per Game">Y/G</th>
+                                <th title="Receiving Long">Lng</th>
+                                <th title="Receiving TDNum">TD</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for player in players %}
+                            <tr>
+                                <td>{{ player.jersey_number }}</td>
+                                <td>{{ player.athlete_name }}</td>
+                                <td>{{ player.games_played }}</td>
+                                <td>{{ player.receiving_num }}</td>
+                                <td>{{ player.receiving_yards }}</td>
+                                <td>{{ player.yards_per_catch }}</td>
+                                <td>{{ player.receiving_yards_per_game }}</td>
+                                <td>{{ player.receiving_long }}</td>
+                                <td>{{ player.receiving_tdnum }}</td>
+
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                {% endif %}
+
+            <p>{{ v }}</p>
+        {% endfor %}
+
+    {% endfor %}
+</body>
+</html>
