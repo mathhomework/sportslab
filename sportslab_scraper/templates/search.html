@@ -1,16 +1,24 @@
+{% extends 'base_template.html' %}
 {% load staticfiles %}
-<html>
-    <title>SportsLab Scraper</title>
-    <script src="{% static 'js/jquery-1.11.1.min.js' %}"></script>
-</html>
-<body>
-    <h1>SportsLab Scraper</h1>
+
+{% block header %}
+
+<title>SportsLab Scraper</title>
+<script src="{% static 'js/jquery-1.11.1.min.js' %}"></script>
+{% endblock %}
+
+{% block content %}
+<div class="myContent center">
+    <h1>SportsLab Scraper for MaxPreps</h1>
+
+    <img id="chemistry" src="http://sportslabhq.com/wp-content/uploads/2014/09/sl-flat-logo-v2300x120.png">
     <p>Insert Link here</p>
     <form id="submit_form">
-{#        {% csrf_token %}#}
+    {#        {% csrf_token %}#}
         <input type="text" id="link">
         <input type="submit" id="submit_link" value="frog">
     </form>
-    <script src="{% static 'js/stuff.js' %}"></script>
+</div>
+<script src="{% static 'js/stuff.js' %}"></script>
 
-</body>
+{% endblock %}

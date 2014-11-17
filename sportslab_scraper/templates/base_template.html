@@ -1,12 +1,18 @@
 {% load staticfiles %}
 <html>
 <head>
-    <link href="{% static 'css/myStyle.css' %}">
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="test/css" href="{% static 'css/myStyle.css' %}">
     {% block header %}
     {% endblock %}
 
 </head>
 <body>
+    <div class="myNav">
+        <img src="http://sportslabhq.com/wp-content/uploads/2014/06/sl_logo-no-beaker200x56.png">
+        <a href="{% url 'search' %}">Search</a>
+        <a href="{% url 'data' %}">View Data</a>
+    </div>
     {% block content %}
     {% endblock %}
 </body>

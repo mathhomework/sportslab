@@ -1,0 +1,54 @@
+.myNav{
+    /*display:inline-block;*/
+    position:relative;
+    background:#0b0e0e;
+    border-bottom: 4px red solid;
+    height:55px;
+}
+
+.myNav img, .myNav a {
+    vertical-align: middle;
+    display:inline-block;
+}
+
+.myNav a{
+    font-size:20px;
+    text-decoration:none;
+    padding-left:10px;
+    padding-right:10px;
+    color:ghostwhite;
+}
+
+body{
+    margin:0;
+    font-family: 'Roboto', sans-serif;
+    background: url("../images/back.jpg");
+    color: #666769;
+}
+
+.myContent{
+    margin-left:10px;
+    margin-right:10px;
+}
+
+.center{
+    text-align:center;
+}
+
+#chemistry{
+    width:30%;
+}
+
+.tables{
+    margin-left:15px;
+}
+h1,h2,h3,h4,p{
+    color: #b2b2b2;
+}
+th,td{
+    padding-left:5px;
+    padding-right: 5px;
+    color:#969696;
+}
+tr:nth-child(even) {}
+tr:nth-child(odd) {background: black}
