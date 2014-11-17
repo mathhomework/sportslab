@@ -87,3 +87,20 @@ MONGODB_HOST = 'mongodb://andrew:hotdog@ds053190.mongolab.com:53190/sportslab_mo
 MONGODB_PORT = 53190 # Change in prod
 MONGODB_DATABASE = "sportslab_mongodb" # Change in prod
 MONGODB_COLLECTION = "sportslab"
+
+
+# Honor the 'X-Forwarded-Proto' header for request.is_secure()
+SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
+
+# Allow all host headers
+ALLOWED_HOSTS = ['*']
+
+# Static asset configuration
+import os
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+STATIC_ROOT = 'staticfiles'
+STATIC_URL = '/static/'
+
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, 'static'),
+)

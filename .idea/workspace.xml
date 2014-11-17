@@ -23,11 +23,51 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="data.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="data.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sportslab_scraper/templates/data.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.30487806" vertical-offset="2500" max-vertical-offset="2860">
+            <state vertical-scroll-proportion="-1.2195122" vertical-offset="2500" max-vertical-offset="2860">
               <caret line="130" column="0" selection-start-line="130" selection-start-column="0" selection-end-line="130" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Procfile" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Procfile">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="120">
+              <caret line="0" column="31" selection-start-line="0" selection-start-column="31" selection-end-line="0" selection-end-column="31" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="settings.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sportslab/settings.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-12.88" vertical-offset="1798" max-vertical-offset="2240">
+              <caret line="106" column="0" selection-start-line="106" selection-start-column="0" selection-end-line="106" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="wsgi.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sportslab/wsgi.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-11.96" vertical-offset="61" max-vertical-offset="480">
+              <caret line="18" column="43" selection-start-line="18" selection-start-column="43" selection-end-line="18" selection-end-column="43" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/sportslab/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.9254144" vertical-offset="805" max-vertical-offset="1260">
+              <caret line="57" column="7" selection-start-line="57" selection-start-column="7" selection-end-line="57" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -108,7 +148,6 @@
         <option value="$PROJECT_DIR$/sportslab_scrape_outer/sportslab_scrape/pipelines.py" />
         <option value="$PROJECT_DIR$/sportslab_scrape_outer/scrapy.cfg" />
         <option value="$PROJECT_DIR$/sportslab_scrape_outer/sportslab_scrape/settings.py" />
-        <option value="$PROJECT_DIR$/sportslab/settings.py" />
         <option value="$PROJECT_DIR$/sportslab_scraper/views.py" />
         <option value="$PROJECT_DIR$/sportslab_scrape_outer/sportslab_scrape/items.py" />
         <option value="$PROJECT_DIR$/sportslab_scrape_outer/sportslab_scrape/spiders/max_spider.py" />
@@ -117,11 +156,14 @@
         <option value="$PROJECT_DIR$/sportslab_scraper/templates/search.html" />
         <option value="$PROJECT_DIR$/sportslab_scraper/static/css/myStyle.css" />
         <option value="$PROJECT_DIR$/sportslab_scraper/templates/data.html" />
+        <option value="$PROJECT_DIR$/Procfile" />
+        <option value="$PROJECT_DIR$/sportslab/settings.py" />
+        <option value="$PROJECT_DIR$/sportslab/wsgi.py" />
+        <option value="$PROJECT_DIR$/sportslab/.gitignore" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="683" />
     <option name="width" value="683" />
     <option name="height" value="728" />
   </component>
@@ -579,7 +621,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="683" y="0" width="683" height="728" extended-state="0" />
+    <frame x="0" y="0" width="683" height="728" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -784,14 +826,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sportslab/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7556719" vertical-offset="1307" max-vertical-offset="1880">
-          <caret line="87" column="37" selection-start-line="87" selection-start-column="20" selection-end-line="87" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sportslab_scrape_outer/scrapy.cfg">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.27303755" vertical-offset="0" max-vertical-offset="586">
@@ -876,8 +910,40 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/sportslab_scraper/templates/data.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.30487806" vertical-offset="2500" max-vertical-offset="2860">
+        <state vertical-scroll-proportion="-1.2195122" vertical-offset="2500" max-vertical-offset="2860">
           <caret line="130" column="0" selection-start-line="130" selection-start-column="0" selection-end-line="130" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Procfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="362">
+          <caret line="0" column="31" selection-start-line="0" selection-start-column="31" selection-end-line="0" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sportslab/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-12.88" vertical-offset="1798" max-vertical-offset="2240">
+          <caret line="106" column="0" selection-start-line="106" selection-start-column="0" selection-end-line="106" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sportslab/wsgi.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.96" vertical-offset="61" max-vertical-offset="480">
+          <caret line="18" column="43" selection-start-line="18" selection-start-column="43" selection-end-line="18" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sportslab/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.9254144" vertical-offset="805" max-vertical-offset="1260">
+          <caret line="57" column="7" selection-start-line="57" selection-start-column="7" selection-end-line="57" selection-end-column="7" />
           <folding />
         </state>
       </provider>
