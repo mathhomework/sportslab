@@ -2,7 +2,7 @@ from scrapy.spider import Spider
 from scrapy.selector import Selector
 
 # example curl
-#curl http://localhost:6800/schedule.json -d project=sportslab_scrape_outer -d spider=max -d max_url="http://www.maxpreps.com/high-schools/de-la-salle-spartans-(concord,ca)/football/stats.htm"
+#curl http://localhost:6800/schedule.json -d project=sportslab_scrape -d spider=max -d max_url="http://www.maxpreps.com/high-schools/de-la-salle-spartans-(concord,ca)/football/stats.htm"
 
 #example terminal crawl
 # scrapy crawl max -a max_url="http://www.maxpreps.com/high-schools/de-la-salle-spartans-(concord,ca)/football/stats.htm"
@@ -63,6 +63,7 @@ class MaxSpider(Spider):
             passing_dict[name].update(dict(zip(passing_players_stats_cat, passing_players_stats[0:len(passing_players_stats_cat)])))
             # print passing_dict[name]
             p = PassingItem()
+            p["category"] = u'Passing'
             p["jersey_number"] = passing_dict[name]["#"]
             p["athlete_name"] = name
             p["school"] = school
@@ -89,6 +90,7 @@ class MaxSpider(Spider):
             rushing_dict[name] = {rushing_players_names_cat[0]: name}
             rushing_dict[name].update(dict(zip(rushing_players_stats_cat, rushing_players_stats[0:len(rushing_players_stats_cat)])))
             r = RushingItem()
+            r["category"] = u'Rushing'
             r["jersey_number"] = rushing_dict[name]["#"]
             r["athlete_name"] = name
             r["school"] = school
@@ -110,6 +112,7 @@ class MaxSpider(Spider):
             receiving_dict[name] = {receiving_players_names_cat[0]: name}
             receiving_dict[name].update(dict(zip(receiving_players_stats_cat, receiving_players_stats[0:len(receiving_players_stats_cat)])))
             p = ReceivingItem()
+            p["category"] = u'Receiving'
             p["jersey_number"] = receiving_dict[name]["#"]
             p["athlete_name"] = name
             p["school"] = school

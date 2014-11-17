@@ -1,5 +1,5 @@
 from pymongo import Connection
-
+# un related to the project. just to remind myself about mongodb
 if __name__ == "__main__":
     con = Connection()
     db = con.test_database #checks to get or create test_database

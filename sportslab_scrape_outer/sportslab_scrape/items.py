@@ -16,6 +16,7 @@ class SportslabScrapeItem(scrapy.Item):
 
 
 class PassingItem(Item):
+    category = Field()
     jersey_number = Field()
     athlete_name = Field()
     school = Field()
@@ -35,6 +36,7 @@ class PassingItem(Item):
 
 
 class RushingItem(Item):
+    category = Field()
     jersey_number = Field()
     athlete_name = Field()
     school = Field()
@@ -49,6 +51,7 @@ class RushingItem(Item):
 
 
 class ReceivingItem(Item):
+    category = Field()
     jersey_number = Field()
     athlete_name = Field()
     school = Field()

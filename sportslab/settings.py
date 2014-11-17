@@ -85,7 +85,7 @@ STATIC_URL = '/static/'
 
 MONGODB_HOST = 'localhost' # Change in prod
 MONGODB_PORT = 27017 # Change in prod
-MONGODB_DB = "training" # Change in prod
+MONGODB_DATABASE = "training" # Change in prod
 MONGODB_COLLECTION = "sportslab"
 MONGODB_USERNAME = "" # Change in prod
 MONGODB_PASSWORD = "" # Change in prod
