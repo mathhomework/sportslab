@@ -1,7 +1,5 @@
 $(document).ready(function(){
-    console.log('wut');
     $("#submit_form").on("submit", function(){
-        console.log('EEHEEHEH');
         var link = $("#link").val();
         $('#link').attr("value", "");
         var link_json = JSON.stringify({'link':link});

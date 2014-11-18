@@ -32,8 +32,10 @@ def do_scrape(request):
     print "do scrape!!"
     if request.method == "POST":
         data = json.loads(request.body)
-        url = "http://localhost:6800/schedule.json"
-        # test = "http://www.maxpreps.com/high-schools/jserra-catholic-lions-(san-juan-capistrano,ca)/football/stats.htm"
+        # running locally
+        # url = "http://localhost:6800/schedule.json"
+        # aws
+        url = "http://ec2-54-67-31-196.us-west-1.compute.amazonaws.com:6800/schedule.json"
         payload = {
             "project": "sportslab_scrape",
             "spider": "max",
