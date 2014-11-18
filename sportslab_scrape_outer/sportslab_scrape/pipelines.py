@@ -20,7 +20,7 @@ class SportslabScrapePipeline(object):
 #     db.authenticate(getattr(settings, "MONGODB_USERNAME", None), getattr(settings, "MONGODB_PASSWORD", None))
 
 
-from pymongo import Connection, MongoClient
+from pymongo import Connection
 
 from scrapy.exceptions import DropItem
 from scrapy.conf import settings
@@ -29,7 +29,7 @@ from scrapy import log
 
 class MongoDBPipeline(object):
     def __init__(self):
-        connection = MongoClient(settings['MONGODB_HOST'], settings['MONGODB_PORT'])
+        connection = Connection(settings['MONGODB_HOST'], settings['MONGODB_PORT'])
         db = connection[settings['MONGODB_DATABASE']]
         self.collection = db[settings['MONGODB_COLLECTION']]
     def process_item(self, item, spider):
