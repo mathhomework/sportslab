@@ -3,7 +3,7 @@ import requests
 from django.http import HttpResponse
 from django.shortcuts import render
 from django.conf import settings
-from scrapyd_api import ScrapydAPI
+
 
 from bson import ObjectId
 from django.views.decorators.csrf import csrf_exempt
