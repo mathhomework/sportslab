@@ -1,1 +1,1 @@
-web: gunicorn sportslab_scraper.wsgi --log-file -
+web: gunicorn sportslab.wsgi --log-file -
