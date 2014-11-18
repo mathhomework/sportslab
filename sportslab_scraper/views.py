@@ -7,7 +7,7 @@ from django.conf import settings
 
 from bson import ObjectId
 from django.views.decorators.csrf import csrf_exempt
-from pymongo import Connection, ASCENDING
+from pymongo import Connection, ASCENDING, DESCENDING
 
 # db = Connection(
 #     host=getattr(settings, "MONGODB_HOST", None),
@@ -56,7 +56,7 @@ def data(request):
         }
     print players
     # school_one = collection.find({"school": schools[0]}).sort("category", ASCENDING)
-    all_data = collection.find().sort("category", ASCENDING)
+    all_data = collection.find().sort("category", DESCENDING)
     for player in all_data:
         if player["category"] == "Passing":
             # print "passer"
