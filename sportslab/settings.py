@@ -88,6 +88,9 @@ MONGODB_PORT = 53190 # Change in prod
 MONGODB_DATABASE = "sportslab_mongodb" # Change in prod
 MONGODB_COLLECTION = "sportslab"
 
+# Parse database configuration from $DATABASE_URL
+import dj_database_url
+DATABASES['default'] =  dj_database_url.config()
 
 # Honor the 'X-Forwarded-Proto' header for request.is_secure()
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')

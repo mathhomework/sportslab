@@ -5,6 +5,7 @@ cffi==0.8.6
 characteristic==14.2.0
 cryptography==0.6.1
 cssselect==0.9.1
+dj-database-url==0.3.0
 dj-static==0.0.6
 django-toolbelt==0.0.1
 gunicorn==19.1.1
@@ -15,6 +16,7 @@ pyasn1-modules==0.0.5
 pycparser==2.10
 pymongo==2.7.2
 pystache==0.5.4
+pywin32==219
 queuelib==1.2.2
 requests==2.4.3
 scrapyd==1.0.1

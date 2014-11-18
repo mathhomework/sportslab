@@ -18,6 +18,7 @@ $(document).ready(function(){
             error:function(data){
                 console.log("failure");
             }
-        })
+        });
+
     })
 }());
