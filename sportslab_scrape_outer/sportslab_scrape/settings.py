@@ -13,7 +13,7 @@ BOT_NAME = 'sportslab_scrape_outer'
 SPIDER_MODULES = ['sportslab_scrape.spiders']
 NEWSPIDER_MODULE = 'sportslab_scrape.spiders'
 
-ITEM_PIPELINES = {'sportslab_scrape.pipelines.MongoDBPipeline':300}
+ITEM_PIPELINES = {'sportslab_scrape.pipelines.MongoDBPipeline': 300}
 
 # local settings
 
