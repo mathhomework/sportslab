@@ -31,6 +31,14 @@ MONGODB_PORT = 53190 # Change in prod
 MONGODB_DATABASE = "sportslab_mongodb" # Change in prod
 MONGODB_COLLECTION = "sportslab"
 
+# MONGODB_HOST = 'ds053190.mongolab.com'
+# MONGODB_PORT = 53190
+# MONGODB_DATABASE = "sportslab_mongodb"
+# MONGODB_COLLECTION = "sportslab"
+# MONGODB_USERNAME = "andrew"
+# MONGODB_PASSWORD = "hotdog"
+
+
 
 
 

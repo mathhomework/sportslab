@@ -12,12 +12,14 @@
     <h1>SportsLab Scraper for MaxPreps</h1>
 
     <img id="chemistry" src="http://sportslabhq.com/wp-content/uploads/2014/09/sl-flat-logo-v2300x120.png">
-    <p>Insert Link here</p>
-{#    <form id="submit_form">#}
+    <p>Paste in a MaxPreps team stats page to be scraped</p>
+    <form id="submit_form">
     {#        {% csrf_token %}#}
-        <input type="text" id="link" placeholder="Insert maxpreps.com link">
-        <input type="submit" id="submit_link" value="frog">
-{#    </form>#}
+        <input type="text" id="link" placeholder="www.maxpreps.com/...teamstats">
+        <input type="submit" id="submit_link" value="Scrape">
+    </form>
+    <br><br>
+    <p>Afterward, visit the View Data section to see the scraped data. Please note that it may take a couple seconds for the data appear, so refresh often.</p>
 </div>
 <script src="{% static 'js/stuff.js' %}"></script>
 

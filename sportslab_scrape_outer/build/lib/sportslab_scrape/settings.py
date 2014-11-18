@@ -13,7 +13,7 @@ BOT_NAME = 'sportslab_scrape_outer'
 SPIDER_MODULES = ['sportslab_scrape.spiders']
 NEWSPIDER_MODULE = 'sportslab_scrape.spiders'
 
-ITEM_PIPELINES = {'sportslab_scrape.pipelines.MongoDBPipeline':300}
+ITEM_PIPELINES = {'sportslab_scrape.pipelines.MongoDBPipeline': 300}
 
 # local settings
 
@@ -30,6 +30,14 @@ MONGODB_HOST = 'mongodb://andrew:hotdog@ds053190.mongolab.com:53190/sportslab_mo
 MONGODB_PORT = 53190 # Change in prod
 MONGODB_DATABASE = "sportslab_mongodb" # Change in prod
 MONGODB_COLLECTION = "sportslab"
+
+# MONGODB_HOST = 'ds053190.mongolab.com'
+# MONGODB_PORT = 53190
+# MONGODB_DATABASE = "sportslab_mongodb"
+# MONGODB_COLLECTION = "sportslab"
+# MONGODB_USERNAME = "andrew"
+# MONGODB_PASSWORD = "hotdog"
+
 
 
 

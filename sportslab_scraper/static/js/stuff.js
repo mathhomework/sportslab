@@ -1,6 +1,6 @@
 $(document).ready(function(){
     console.log('wut');
-    $("#submit_link").on("click", function(){
+    $("#submit_form").on("submit", function(){
         console.log('EEHEEHEH');
         var link = $("#link").val();
         $('#link').attr("value", "");

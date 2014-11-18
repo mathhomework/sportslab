@@ -50,5 +50,38 @@ th,td{
     padding-right: 5px;
     color:#969696;
 }
+
+#link{
+    font-family: 'Roboto', sans-serif;
+    border: red 2px solid;
+    padding-left:7px;
+    height:40px;
+    width:40%;
+    font-size: 20px;
+    border-radius: 5px;
+    padding-bottom:5px;
+
+
+}
+
+#submit_link{
+    color: ghostwhite;
+    border:red 2px solid;
+    font-family: 'Roboto', sans-serif;
+    transition: background-color 0.5s ease;
+    background-color: transparent;
+    border-radius: 5px;
+    height:40px;
+    padding-right:20px;
+    padding-bottom:5px;
+    padding-left:20px;
+    font-size: 20px;
+}
+
+#submit_link:hover{
+
+    transition: background-color 0.7s ease;
+    background-color:red;
+}
 tr:nth-child(even) {}
 tr:nth-child(odd) {background: black}
